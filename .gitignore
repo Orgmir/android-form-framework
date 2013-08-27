@@ -1,0 +1,53 @@
+*.o
+*.lo
+*.la
+#*#
+.*.rej
+*.rej
+.*~
+*~
+.#*
+.DS_Store
+*~.nib
+*.pbxuser
+.xvpics
+build/*
+*.mode1
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+.svn
+*/*/build/*
+*/*/Build/*
+*/*/*/build/*
+*/*/*/Build/*
+docs/*
+Doxyfile.bak
+#xcode specific
+build/*
+*.perspective
+*.perspectivev3
+*~.nib
+#ignore private workspace stuff added by Xcode4
+xcuserdata
+project.xcworkspace
+gen
+.classpath
+.project
+.metadata
+.settings
+bin
+
+#IntelliJ IDEA
+*.iws
+#User specific files
+*/.idea/uiDesigner.xml
+*/.idea/codeStyleSettings.xml
+*/.idea/workspace.xml
+.idea/codeStyleSettings.xml
+.idea/uiDesigner.xml
+.idea/workspace.xml
+
+#output file with generated files
+out
+*.rube-backups
