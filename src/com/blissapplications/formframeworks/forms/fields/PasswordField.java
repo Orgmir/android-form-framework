@@ -1,9 +1,7 @@
 package com.blissapplications.formframeworks.forms.fields;
 
 import android.widget.TextView;
-import com.blissapplications.formframeworks.FFApp;
 import com.blissapplications.formframeworks.R;
-import com.blissapplications.formframeworks.valuevalidators.EmailValueValidator;
 import com.blissapplications.formframeworks.valuevalidators.SizeValueValidator;
 
 /**
@@ -37,18 +35,18 @@ public class PasswordField extends Field {
   private void init(){
     if(minSize == -1 && maxSize != -1){
       addValueValidator(new SizeValueValidator(minSize, maxSize,
-          String.format(FFApp.getInstance().getString(R.string.password_size_error_max), maxSize),
-          String.format(FFApp.getInstance().getString(R.string.password_size_hint_max), maxSize)
+          String.format(getControlContext().getString(R.string.password_size_error_max), maxSize),
+          String.format(getControlContext().getString(R.string.password_size_hint_max), maxSize)
       ));
     }else if(maxSize == -1 && minSize != -1){
       addValueValidator(new SizeValueValidator(minSize, maxSize,
-          String.format(FFApp.getInstance().getString(R.string.password_size_error_min), minSize),
-          String.format(FFApp.getInstance().getString(R.string.password_size_hint_min), minSize)
+          String.format(getControlContext().getString(R.string.password_size_error_min), minSize),
+          String.format(getControlContext().getString(R.string.password_size_hint_min), minSize)
       ));
     }else if(maxSize != -1 && minSize != -1){
       addValueValidator(new SizeValueValidator(minSize, maxSize,
-        String.format(FFApp.getInstance().getString(R.string.password_size_error_both), minSize, maxSize),
-        String.format(FFApp.getInstance().getString(R.string.password_size_hint_both), minSize, maxSize)
+        String.format(getControlContext().getString(R.string.password_size_error_both), minSize, maxSize),
+        String.format(getControlContext().getString(R.string.password_size_hint_both), minSize, maxSize)
       ));
     }
   }
