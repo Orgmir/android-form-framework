@@ -1,6 +1,7 @@
 package com.blissapplications.formframeworks.rules;
 
 import android.widget.TextView;
+import com.blissapplications.formframeworks.R;
 import com.blissapplications.formframeworks.forms.IValidator;
 
 /**
@@ -26,8 +27,7 @@ public class PasswordFieldRule implements IValidator {
     if(v1.equals(v2)){
       return true;
     }else{
-      //TODO localize this
-      password2.setError("Sorry, password values don't match!");
+      password2.setError(password2.getContext().getString(R.string.password_field_rule_error));
       return false;
     }
   }

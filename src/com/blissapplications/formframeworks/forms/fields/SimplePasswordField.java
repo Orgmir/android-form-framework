@@ -13,19 +13,19 @@ import com.blissapplications.formframeworks.valuevalidators.SizeValueValidator;
  * It verifies if the text entered in the field has the correct size.
  * You can choose not to use one limit by passing -1.
  */
-public class PasswordField extends Field {
+public class SimplePasswordField extends Field {
 
   private int minSize = -1;
   private int maxSize = -1;
 
-  public PasswordField(int minSize, int maxSize, TextView textView) {
+  public SimplePasswordField(int minSize, int maxSize, TextView textView) {
     super(textView);
     this.minSize = minSize;
     this.maxSize = maxSize;
     init();
   }
 
-  public PasswordField(int minSize, int maxSize, TextView textView, boolean required) {
+  public SimplePasswordField(int minSize, int maxSize, TextView textView, boolean required) {
     super(textView, required);
     this.minSize = minSize;
     this.maxSize = maxSize;
