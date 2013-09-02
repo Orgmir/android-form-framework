@@ -1,4 +1,4 @@
-# Bliss Forms Framework
+# Android Form Framework
 
 Helper activity to simplify the creation and validation of forms.
 
