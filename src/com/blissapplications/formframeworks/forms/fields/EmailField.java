@@ -1,7 +1,6 @@
 package com.blissapplications.formframeworks.forms.fields;
 
 import android.widget.TextView;
-import com.blissapplications.formframeworks.FFApp;
 import com.blissapplications.formframeworks.R;
 import com.blissapplications.formframeworks.valuevalidators.EmailValueValidator;
 
@@ -28,8 +27,8 @@ public class EmailField extends Field {
 
   private void init(){
     addValueValidator(new EmailValueValidator(
-        FFApp.getInstance().getString(R.string.wrong_format_email_value),
-        FFApp.getInstance().getString(R.string.email_value_validator_hint)
+        getControlContext().getString(R.string.wrong_format_email_value),
+        getControlContext().getString(R.string.email_value_validator_hint)
     ));
   }
 }

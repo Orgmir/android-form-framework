@@ -1,7 +1,7 @@
 package com.blissapplications.formframeworks.forms.fields;
 
+import android.content.Context;
 import android.widget.TextView;
-import com.blissapplications.formframeworks.FFApp;
 import com.blissapplications.formframeworks.R;
 import com.blissapplications.formframeworks.forms.IValidator;
 import com.blissapplications.formframeworks.forms.IValueValidator;
@@ -56,8 +56,12 @@ public class Field implements IValidator {
     return true;
   }
 
+  protected Context getControlContext(){
+    return control != null ? control.getContext() : null;
+  }
+
   private void warnRequiredFields(){
-    setErrorMessage(FFApp.getInstance().getString(R.string.required_field));
+    setErrorMessage(getControlContext().getString(R.string.required_field));
   }
 
   private void setErrorMessage(String message){
