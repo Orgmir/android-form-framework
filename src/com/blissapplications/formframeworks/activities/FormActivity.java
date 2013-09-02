@@ -26,6 +26,11 @@ public abstract class FormActivity extends BaseActivity{
     ruleSet.add(validator);
   }
 
+  /**
+   * Validates the form (the list of IValidators)
+   *
+   * @return true if the form is valid, false otherwise
+   */
   public boolean validateForm(){
     boolean finalResult = true;
     for(IValidator validator : ruleSet){
