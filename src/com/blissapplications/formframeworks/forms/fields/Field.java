@@ -20,13 +20,14 @@ public class Field implements IValidator {
   private TextView control;
   private boolean required = true;
 
-  private ArrayList<IValueValidator> valueValidatorList = new ArrayList<IValueValidator>();
+  private ArrayList<IValueValidator> valueValidatorList;
 
   public Field(TextView textView){
     this(textView, true);
   }
 
   public Field(TextView textView, boolean inRequired){
+    valueValidatorList = new ArrayList<IValueValidator>();
     control = textView;
     required = inRequired;
   }
