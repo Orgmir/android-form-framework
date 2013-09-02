@@ -1,6 +1,10 @@
-package com.blissapplications.formframeworks.forms;
+package com.blissapplications.formframeworks.forms.fields;
 
 import android.widget.TextView;
+import com.blissapplications.formframeworks.FFApp;
+import com.blissapplications.formframeworks.R;
+import com.blissapplications.formframeworks.forms.IValidator;
+import com.blissapplications.formframeworks.forms.IValueValidator;
 import com.blissapplications.formframeworks.utils.StringUtils;
 
 import java.util.ArrayList;
@@ -27,6 +31,10 @@ public class Field implements IValidator {
     required = inRequired;
   }
 
+  public void addValueValidator(IValueValidator valueValidator){
+    valueValidatorList.add(valueValidator);
+  }
+
   @Override
   public boolean validate() {
     String value = getValue();
@@ -49,8 +57,7 @@ public class Field implements IValidator {
   }
 
   private void warnRequiredFields(){
-    //TODO localize this
-    setErrorMessage("This is a required field");
+    setErrorMessage(FFApp.getInstance().getString(R.string.required_field));
   }
 
   private void setErrorMessage(String message){
