@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!--PT RESOURCE FILE-->
+  <string name="required_field">Este campo é obrigatório</string>
+
+  <!--EmailField-->
+  <string name="email_value_validator_hint">O formato do email é email@examplo.pt</string>
+  <string name="wrong_format_email_value">O email fornecido não está no formato correcto</string>
+
+  <!--PasswordField-->
+  <string name="password_size_hint_min">O comprimento da password tem de ser superior a %d</string>
+  <string name="password_size_hint_max">O comprimento da password tem de ser inferior a %d</string>
+  <string name="password_size_hint_both">O comprimento da password tem de ser entre %d e %d</string>
+  <string name="password_size_error_min">A password tem o tamanho errado. Tem de ser superior a %d</string>
+  <string name="password_size_error_max">A password tem o tamanho errado. Tem de ser inferior a %d</string>
+  <string name="password_size_error_both">A password tem o tamanho errado. Tem de ser entre %d e %d</string>
+</resources>
