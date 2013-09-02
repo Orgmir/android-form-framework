@@ -16,13 +16,13 @@ public class PasswordFieldRule implements IValidator {
 
   public PasswordFieldRule(TextView textView1, TextView textView2){
     this.password1 = textView1;
-    this.password1 = textView2;
+    this.password2 = textView2;
   }
 
   @Override
   public boolean validate() {
-    String v1 = password1.getText().toString();
-    String v2 = password2.getText().toString();
+    String v1 = password1.getText() != null ? password1.getText().toString() : "";
+    String v2 = password2.getText() != null ? password2.getText().toString() : "";
     if(v1.equals(v2)){
       return true;
     }else{
