@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Bliss Form Frameworks.iml" filepath="$PROJECT_DIR$/Bliss Form Frameworks.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../ActionBarSherlock/actionbarsherlock/actionbarsherlock.iml" filepath="$PROJECT_DIR$/../ActionBarSherlock/actionbarsherlock/actionbarsherlock.iml" />
     </modules>
   </component>
 </project>
