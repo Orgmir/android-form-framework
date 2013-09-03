@@ -10,13 +10,11 @@
   <string name="wrong_format_email_value">The email provided has a wrong format</string>
 
   <!--SimplePasswordField-->
-  <string name="password_size_hint_min">The password size should be bigger than %1$d</string>
-  <string name="password_size_hint_max">The password size should be smaller than %1$d</string>
+  <string name="password_size_hint_min">The password size should be at least %1$d</string>
+  <string name="password_size_hint_max">The password size should not be longer than %1$d</string>
   <string name="password_size_hint_both">The password size should be between %1$d and %2$d</string>
-  <string name="password_size_error_min">The password has the wrong size.</string>
-  <string name="password_size_error_max">The password has the wrong size.</string>
-  <string name="password_size_error_both">The password has the wrong size.</string>
+  <string name="password_size_error">The password has the wrong size.</string>
 
   <!--PasswordFieldRule-->
-  <string name="password_field_rule_error">Password values don't match</string>
+  <string name="password_field_rule_error">Password values don\'t match</string>
 </resources>

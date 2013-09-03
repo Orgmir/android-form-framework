@@ -8,12 +8,10 @@
   <string name="wrong_format_email_value">O email fornecido não está no formato correcto</string>
 
   <!--SimplePasswordField-->
-  <string name="password_size_hint_min">O comprimento da password tem de ser superior a %1$d</string>
-  <string name="password_size_hint_max">O comprimento da password tem de ser inferior a %1$d</string>
+  <string name="password_size_hint_min">O comprimento da password tem de ser igual ou superior a %1$d</string>
+  <string name="password_size_hint_max">O comprimento da password tem de ser igual ou inferior a %1$d</string>
   <string name="password_size_hint_both">O comprimento da password tem de ser entre %1$d e %2$d</string>
-  <string name="password_size_error_min">A password tem o tamanho errado.</string>
-  <string name="password_size_error_max">A password tem o tamanho errado.</string>
-  <string name="password_size_error_both">A password tem o tamanho errado.</string>
+  <string name="password_size_error">A password tem o tamanho errado.</string>
 
   <!--PasswordFieldRule-->
   <string name="password_field_rule_error">As passwords não são iguais</string>

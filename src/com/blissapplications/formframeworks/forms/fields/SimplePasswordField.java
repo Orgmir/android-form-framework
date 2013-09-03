@@ -35,17 +35,17 @@ public class SimplePasswordField extends Field {
   private void init(){
     if(minSize == -1 && maxSize != -1){
       addValueValidator(new SizeValueValidator(minSize, maxSize,
-          String.format(getControlContext().getString(R.string.password_size_error_max), maxSize),
+          String.format(getControlContext().getString(R.string.password_size_error), maxSize),
           String.format(getControlContext().getString(R.string.password_size_hint_max), maxSize)
       ));
     }else if(maxSize == -1 && minSize != -1){
       addValueValidator(new SizeValueValidator(minSize, maxSize,
-          String.format(getControlContext().getString(R.string.password_size_error_min), minSize),
+          String.format(getControlContext().getString(R.string.password_size_error), minSize),
           String.format(getControlContext().getString(R.string.password_size_hint_min), minSize)
       ));
     }else if(maxSize != -1 && minSize != -1){
       addValueValidator(new SizeValueValidator(minSize, maxSize,
-        String.format(getControlContext().getString(R.string.password_size_error_both), minSize, maxSize),
+        String.format(getControlContext().getString(R.string.password_size_error), minSize, maxSize),
         String.format(getControlContext().getString(R.string.password_size_hint_both), minSize, maxSize)
       ));
     }

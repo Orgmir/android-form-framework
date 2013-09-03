@@ -24,6 +24,8 @@ public class SizeValueValidator implements IValueValidator {
   public SizeValueValidator(int minSize, int maxSize, String errorMessage, String hint){
     this.error = errorMessage;
     this.hint = hint;
+    this.minSize = minSize;
+    this.maxSize = maxSize;
   }
 
   @Override
